@@ -1,0 +1,262 @@
+body {
+  font-family: 'Roboto', sans-serif;
+
+  color: #434455;
+
+  background-color: #fff;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #2e2f42;
+}
+ul li {
+  list-style-type: none;
+}
+
+/*------ HEADER ------*/
+
+.top-line {
+  justify-content: space-between;
+}
+
+.main-logo {
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  color: #4d5ae5;
+}
+.main-logo > span {
+  color: #2e2f42;
+}
+
+.top-line-nav {
+}
+
+.top-line-nav > ul {
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+address {
+  font-style: normal;
+}
+.addresat > ul {
+}
+.addresat > ul li > a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-right: 40px;
+}
+
+.top-nav-item:hover,
+.top-nav-item:focus {
+  color: #404bbf;
+  text-decoration: underline;
+}
+.addresat .addresat-contact {
+  color: #434455;
+}
+
+.addresat .addresat-contact:hover,
+.addresat .addresat-contact:focus {
+  color: #404bbf;
+}
+
+/*------ HERO SECTION ------*/
+
+.hero {
+  background-color: #2e2f42;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  color: white;
+  text-align: center;
+}
+.hero-button {
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: rgba(64, 75, 191, 1);
+}
+
+/*------ Section benefits ------*/
+
+.benefits {
+  justify-content: center;
+}
+
+.benefits-title {
+}
+
+.benefits-list {
+  justify-content: space-between;
+}
+
+.benefits-list > li {
+  margin: 0 12px;
+}
+
+.benefits-list > li > h3 {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 8px;
+  color: #2e2f42;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.li-text {
+  color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+/*------ CREW ------*/
+
+.crew {
+  background-color: #f4f4fd;
+}
+
+.crew-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin: 0 0 72px 0;
+  color: #2e2f42;
+}
+
+.crew-list {
+  justify-content: center;
+}
+
+.crew-list > li {
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+  margin: 0 12px;
+}
+
+.crew-list-foto {
+  margin: 0 0 32px 0;
+  min-height: 260px;
+}
+
+.crew-list-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  margin: 0 0 8px 0;
+  color: #2e2f42;
+}
+
+.crew-list > li > p {
+  margin: 0 0 32px 0;
+}
+
+/* ------- portfolio ------*/
+
+.portfolio {
+  background-color: #ffffff;
+}
+
+.portfolio-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin: 0 0 72px 0;
+}
+
+.portfolio-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.portfolio-list > li {
+  margin-bottom: 48px;
+  flex-shrink: 0;
+  border: 1px solid #e7e9fc;
+  background-color: #ffffff;
+}
+.portfolio-list-img {
+  margin: 0;
+}
+
+.portfolio-list-title {
+  margin: 32px 0 8px 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.portfolio-list > li p {
+  margin: 0 0 32px 16px;
+}
+
+/*------- FOOTER -------*/
+
+.ground {
+  background-color: #2e2f42;
+}
+
+.ground-logo {
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  color: #4d5ae5;
+  margin: 0 0 17.5px 0;
+}
+.ground-logo-span {
+  color: #f4f4fd;
+}
+
+.ground-par {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
