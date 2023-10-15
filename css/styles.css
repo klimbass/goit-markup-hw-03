@@ -1,9 +1,20 @@
 body {
   font-family: 'Roboto', sans-serif;
-
   color: #434455;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  background-color: #fff;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 button {
   cursor: pointer;
@@ -12,18 +23,48 @@ a {
   text-decoration: none;
   color: #2e2f42;
 }
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
 ul li {
   list-style-type: none;
 }
 
+image {
+  display: block;
+}
+
+.container {
+  max-width: ;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.vertical-indents {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /*------ HEADER ------*/
 
+.top {
+  background: #ffffff;
+  width: 1440px;
+}
+
 .top-line {
+  display: flex;
   justify-content: space-between;
+  padding: 24px 156px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .main-logo {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
@@ -36,22 +77,28 @@ ul li {
 }
 
 .top-line-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 76px;
 }
 
 .top-line-nav > ul {
-  justify-content: space-between;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+  display: flex;
+  gap: 40px;
 }
 
 address {
   font-style: normal;
 }
-.addresat > ul {
+.top-contact > ul {
+  display: flex;
+  justify-content: space-between;
 }
-.addresat > ul li > a {
+.top-contact > ul li > a {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -64,20 +111,26 @@ address {
   color: #404bbf;
   text-decoration: underline;
 }
-.addresat .addresat-contact {
+.top-contact .contact-item {
   color: #434455;
 }
 
-.addresat .addresat-contact:hover,
-.addresat .addresat-contact:focus {
+.top-contact .top-contact-item:hover,
+.top-contact .top-contact-item:focus {
   color: #404bbf;
 }
 
 /*------ HERO SECTION ------*/
 
-.hero {
+.hero-page {
   background-color: #2e2f42;
-  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-left: 472px;
+  padding-right: 472px;
 }
 
 .hero-title {
@@ -87,14 +140,21 @@ address {
   letter-spacing: 1.12px;
   color: white;
   text-align: center;
+  margin-bottom: 48px;
 }
 .hero-button {
+  margin: 0 auto;
   background-color: #4d5ae5;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
+  display: inline-flex;
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
@@ -105,18 +165,22 @@ address {
 /*------ Section benefits ------*/
 
 .benefits {
-  justify-content: center;
+  padding-left: 156px;
+  padding-right: 156px;
 }
 
 .benefits-title {
+  display: none;
 }
 
 .benefits-list {
+  display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .benefits-list > li {
-  margin: 0 12px;
+  width: calc((100%-72px) / 4);
 }
 
 .benefits-list > li > h3 {
@@ -142,8 +206,15 @@ address {
 
 /*------ CREW ------*/
 
-.crew {
+.crew-page {
   background-color: #f4f4fd;
+}
+
+.crew {
+  display: flex;
+  flex-direction: column;
+  padding-left: 156px;
+  padding-right: 156px;
 }
 
 .crew-title {
@@ -158,14 +229,19 @@ address {
 }
 
 .crew-list {
+  display: flex;
   justify-content: center;
+  gap: 24px;
 }
 
 .crew-list > li {
-  justify-content: center;
   text-align: center;
   background: #ffffff;
-  margin: 0 12px;
+  width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .crew-list-foto {
@@ -190,7 +266,10 @@ address {
 /* ------- portfolio ------*/
 
 .portfolio {
-  background-color: #ffffff;
+  padding-left: 156px;
+  padding-right: 156px;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-title {
@@ -205,16 +284,15 @@ address {
 }
 
 .portfolio-list {
-  flex-flow: row wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
 }
 
 .portfolio-list > li {
-  margin-bottom: 48px;
-  flex-shrink: 0;
   border: 1px solid #e7e9fc;
   background-color: #ffffff;
+  flex-grow: calc((100%-120px) / 6);
 }
 .portfolio-list-img {
   margin: 0;
@@ -235,19 +313,29 @@ address {
 
 /*------- FOOTER -------*/
 
-.ground {
+.ground-page {
   background-color: #2e2f42;
+  width: 1440px;
+}
+
+.ground {
+  padding-top: 100px;
+  padding-right: 1020px;
+  padding-bottom: 100px;
+  padding-left: 156px;
+  display: flex;
+  flex-direction: column;
 }
 
 .ground-logo {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.54px;
   color: #4d5ae5;
-  margin: 0 0 17.5px 0;
+  margin: 0 0 18px 0;
 }
 .ground-logo-span {
   color: #f4f4fd;
