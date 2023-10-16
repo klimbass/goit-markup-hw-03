@@ -42,6 +42,8 @@ img {
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
+  width: 1158px;
+  padding: 0 15px;
 }
 
 .vertical-indents {
@@ -60,7 +62,8 @@ img {
 .top-line {
   display: flex;
   justify-content: space-between;
-  padding: 24px 156px;
+  padding-left: 156px;
+  padding-right: 156px;
 }
 
 .main-logo {
@@ -80,10 +83,11 @@ img {
 .top-line-nav {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   gap: 76px;
 }
 
-.top-line-nav > ul {
+.top-nav {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -92,12 +96,17 @@ img {
   gap: 40px;
 }
 
+.top-nav-item {
+  padding: 24px 0;
+}
+
 address {
   font-style: normal;
 }
-.top-contact > ul {
+.contact-list {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 .top-contact > ul li > a {
   font-size: 16px;
