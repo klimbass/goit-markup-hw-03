@@ -32,7 +32,7 @@ ul li {
   list-style-type: none;
 }
 
-image {
+img {
   display: block;
 }
 
@@ -54,13 +54,13 @@ image {
 .top {
   background: #ffffff;
   width: 1440px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .top-line {
   display: flex;
   justify-content: space-between;
   padding: 24px 156px;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .main-logo {
@@ -71,6 +71,7 @@ image {
   line-height: 1.17;
   letter-spacing: 0.54px;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .main-logo > span {
   color: #2e2f42;
@@ -170,7 +171,17 @@ address {
 }
 
 .benefits-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefits-list {
@@ -316,18 +327,19 @@ address {
 .ground-page {
   background-color: #2e2f42;
   width: 1440px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .ground {
-  padding-top: 100px;
   padding-right: 1020px;
-  padding-bottom: 100px;
   padding-left: 156px;
   display: flex;
   flex-direction: column;
 }
 
 .ground-logo {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 18px;
@@ -335,7 +347,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.54px;
   color: #4d5ae5;
-  margin: 0 0 18px 0;
+  margin-bottom: 18px;
 }
 .ground-logo-span {
   color: #f4f4fd;
