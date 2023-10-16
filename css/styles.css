@@ -87,10 +87,10 @@ img {
   letter-spacing: 0.32px;
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .top-nav-li {
-  padding: 24px 0;
 }
 
 .top-contact {
@@ -334,13 +334,7 @@ img {
   padding-bottom: 100px;
 }
 
-.ground {
-  display: flex;
-  flex-direction: column;
-}
-
 .ground-logo {
-  display: inline-block;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 18px;
@@ -349,6 +343,7 @@ img {
   letter-spacing: 0.54px;
   color: #4d5ae5;
   margin-bottom: 16px;
+  display: inline-block;
 }
 .ground-logo-span {
   color: #f4f4fd;
