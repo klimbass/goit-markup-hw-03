@@ -51,15 +51,12 @@ img {
 
 .top {
   background: #ffffff;
-  width: 1440px;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .top-line {
   display: flex;
   justify-content: space-between;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 
 .main-logo {
@@ -92,16 +89,18 @@ img {
   gap: 40px;
 }
 
-.top-nav-item {
+.top-nav-li {
   padding: 24px 0;
 }
 
-address {
+.top-contact {
   font-style: normal;
+  padding: 24px 0;
 }
 .contact-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 40px;
 }
 .top-contact > ul li > a {
@@ -109,7 +108,6 @@ address {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
-  margin-right: 40px;
 }
 
 .top-nav-item:hover,
@@ -136,6 +134,7 @@ address {
 .hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -172,12 +171,6 @@ address {
 }
 
 /*------ Section benefits ------*/
-
-.benefits {
-  padding-left: 156px;
-  padding-right: 156px;
-  padding: 120px 0;
-}
 
 .benefits-title {
   position: absolute;
@@ -233,8 +226,6 @@ address {
 .crew {
   display: flex;
   flex-direction: column;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 
 .crew-title {
@@ -244,7 +235,7 @@ address {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin: 0 0 72px 0;
+  margin-bottom: 72px;
   color: #2e2f42;
 }
 
@@ -257,7 +248,7 @@ address {
 .crew-list-li {
   text-align: center;
   background: #ffffff;
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -289,8 +280,6 @@ address {
 /* ------- portfolio ------*/
 
 .portfolio {
-  padding-left: 156px;
-  padding-right: 156px;
   display: flex;
   flex-direction: column;
 }
@@ -316,7 +305,7 @@ address {
 .portfolio-item {
   border: 1px solid #e7e9fc;
   background-color: #ffffff;
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-list-img {
   margin: 0;
@@ -346,8 +335,6 @@ address {
 }
 
 .ground {
-  padding-right: 1020px;
-  padding-left: 156px;
   display: flex;
   flex-direction: column;
 }
@@ -368,6 +355,7 @@ address {
 }
 
 .ground-par {
+  width: 264px;
   color: #f4f4fd;
   font-size: 16px;
   font-weight: 400;
