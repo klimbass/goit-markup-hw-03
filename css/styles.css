@@ -37,11 +37,7 @@ img {
 }
 
 .container {
-  max-width: ;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   width: 1158px;
   padding: 0 15px;
 }
@@ -134,13 +130,12 @@ address {
 
 .hero-page {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
-  padding-left: 472px;
-  padding-right: 472px;
 }
 
 .hero-title {
@@ -151,8 +146,13 @@ address {
   color: white;
   text-align: center;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 .hero-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   margin: 0 auto;
   background-color: #4d5ae5;
   color: #ffffff;
@@ -177,6 +177,7 @@ address {
 .benefits {
   padding-left: 156px;
   padding-right: 156px;
+  padding: 120px 0;
 }
 
 .benefits-title {
@@ -254,7 +255,7 @@ address {
   gap: 24px;
 }
 
-.crew-list > li {
+.crew-list-li {
   text-align: center;
   background: #ffffff;
   width: calc((100%-72px) / 4);
@@ -265,8 +266,10 @@ address {
 }
 
 .crew-list-foto {
-  margin: 0 0 32px 0;
   min-height: 260px;
+}
+.crew-list-discr {
+  padding: 32px 0;
 }
 
 .crew-list-title {
@@ -275,12 +278,13 @@ address {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
-  margin: 0 0 8px 0;
+  margin-bottom: 8px;
   color: #2e2f42;
+  text-align: center;
 }
 
-.crew-list > li > p {
-  margin: 0 0 32px 0;
+.li-text {
+  text-align: center;
 }
 
 /* ------- portfolio ------*/
@@ -300,35 +304,37 @@ address {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin: 0 0 72px 0;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
-.portfolio-list > li {
+.portfolio-item {
   border: 1px solid #e7e9fc;
   background-color: #ffffff;
-  flex-grow: calc((100%-120px) / 6);
+  flex-grow: calc((100%-48px) / 3);
 }
 .portfolio-list-img {
   margin: 0;
 }
+.portfolio-item-discr {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 
 .portfolio-list-title {
-  margin: 32px 0 8px 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
-
-.portfolio-list > li p {
-  margin: 0 0 32px 16px;
+  margin-bottom: 8px;
 }
 
 /*------- FOOTER -------*/
